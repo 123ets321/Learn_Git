@@ -1,0 +1,130 @@
+{   
+    "dive_code_timer" : 0.01,
+
+    "home_params":{
+        "home_lat":0,
+        "home_lon":0.0,
+        "home_alt":0.0,
+        "home_flag":0.0
+    },
+
+    "dive_home_params":{
+        "home_alt":0.0,
+        "home_flag":0,
+        "home_lat":null,
+        "home_lon":null,
+        "home_lat_ghost":null,
+        "home_lon_ghost":null
+
+    },
+
+    "vehicle_flags":{
+        "arming_flag":0,
+        "takeoff_flag":0,
+        "offboard_flag":0,
+        "takeoff_height":50.0,
+        "airspeed":20.0,
+        "transition_flag":0
+    },
+
+    "nav_dive_params":{
+        "strike_angle":30.0,
+        "min_dive_start_alt":300.0,
+        "max_bank_angle":30.0,
+        "max_pitch_angle":30.0,
+        "base_thrust":0.3,
+        "kp":0.02,
+        "ki":0.00001,
+        "sampling_time":0.01,
+        "integral_error":0.0,
+        "cancel_alt":160.0,
+        "rmin":100.0,
+        "vehicle_ini_xl":0.0,
+        "vehicle_ini_yl":0.0,
+        "vehicle_ini_zl":0.0
+
+    },
+
+    "dive_flags":{
+      "command":null,
+      "command_data":null,
+      "dive":false,
+      "target_lat":null,
+      "target_lon":null,
+      "location":false,
+      "lock":false,
+      "is_dive_started":false,
+      "dist_midpoint":false,
+      "climbed":false,
+      "offboard_flag":false,
+      "cancel_flag":0
+    },
+
+    "battery":{
+        "max_voltage":16.8,
+        "total_cells":4.0,
+        "max_v_per_cell":4.2,
+        "min_v_per_cell":3.7
+    },
+
+    "gcs_commands":{
+        "mission_end_commands":["land", "return", "kill"],
+        "lock":0
+    },
+
+    "id":0,
+
+    "threshold":60,
+
+    "notification":" ",
+
+    "comms_gcs":{
+        "is_in_goto":false,
+        "is_curr_wp_deleted": false,
+        "all_previous_wp_ids":[],
+        "gate_opened":0,
+        "previous_waypoint":0,
+        "mission_completed":false,
+        "mission_total":0,
+        "is_mission_completed":false,
+        "is_mission_uploaded":false,
+        "current_waypoint":0,
+        "current_wp_id":0,
+        "is_mission_executing":false,
+        "is_mission_paused":false,
+        "location_set":false,
+        "isconnected":true,
+
+        "command":null,
+        "waypoint":null,
+        "mission":null,
+        "curr_lat":null,
+        "curr_lon":null,
+        "curr_wp_id":null,
+        "st":null,
+        "et":null,
+        "command_before_pausing":null
+    },
+
+    "available_modes":{"0":"Manual",
+                        "1":"Altitude",
+                        "2":"Position",
+                        "3":"Auto Mission",
+                        "4":"Loiter",
+                        "5":"Return",
+                        "6":"Position Slow",
+                        "10":"Acro",
+                        "12":"Descend",
+                        "13":"Termination",
+                        "14":"Mission",
+                        "15":"Stabilized",
+                        "17":"Takeoff",
+                        "18":"Land",
+                        "19":"Auto Follow",
+                        "20":"Precision Land",
+                        "21":"Loiter",
+                        "22":"VTOL_Takeoff"}
+
+}
+
+
